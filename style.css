@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+                                                    
+}
+
+body {
+    font-family: 'Avenir Next LT Pro', sans-serif; 
+}
+
+
+nav {
+    background: #652D90;
+    height: 160px;
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label.logo {
+    padding: 0 25px;
+    padding-top: 25px;
+}
+
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    padding-top: 125px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+
+a.active,a:hover {
+    background: #8457A6;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        padding-left: 50px
+    }
+    nav ul li a {
+        font-size: 16px;    
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #190B24;
+        top: 160px;
+        left: -100;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,a.active {
+        background: none;
+        color: #8457A6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+
+    }
+}
+
+.pic1 section {
+    background: url(images/autism\ background.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.pic2 section {
+    background: url(images/autism2.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.pic3 section {
+    background: url(images/autism3.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.pic4 section {
+    background: url(images/autism4.png) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
